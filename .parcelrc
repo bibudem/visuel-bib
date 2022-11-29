@@ -1,0 +1,9 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{hbs,html}": [
+      "@partiellkorrekt/parcel-transformer-handlebars",
+      "..."
+    ]
+  }
+}

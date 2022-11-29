@@ -1,0 +1,38 @@
+{
+  "name": "parcel",
+  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Parcel.",
+  "version": "0.0.0",
+  "private": true,
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "targets": {
+    "modern": {
+      "engines": {
+        "browsers": "last 2 versions, not dead"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "rimraf dev && parcel serve --no-cache --public-url / --dist-dir dev src/*.html",
+    "build": "rimraf build/ && parcel build --no-content-hash --no-cache --target modern --dist-dir build src/*.html",
+    "serve": "serve build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@parcel/optimizer-data-url": "^2.8.0",
+    "@parcel/transformer-inline-string": "^2.8.0",
+    "parcel": "^2.8.0",
+    "parcel-namer-hashless": "^1.0.3",
+    "postcss": "^8.4.19",
+    "postcss-import": "^15.0.0",
+    "postcss-url": "^10.1.3",
+    "rimraf": "^3.0.2",
+    "serve": "^14.1.2"
+  },
+  "dependencies": {
+    "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
+    "handlebars": "^4.7.7",
+    "jquery": "^3.6.1"
+  }
+}

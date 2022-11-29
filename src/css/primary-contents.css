@@ -1,0 +1,132 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 601px) {
+  .container {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+@media (min-width: 1240px) {
+  .container {
+    width: 1220px;
+  }
+}
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.col-md-2,
+.col-md-3,
+.col-md-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .col-md-2,
+  .col-md-3,
+  .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+}
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 22px;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: #333333;
+}
+.breadcrumb > .active {
+  color: #48566b;
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.container:after,
+.row:after,
+.nav:after {
+  clear: both;
+}
+.csc-frame-default li {
+  margin-bottom: 0.5em;
+}
+@media (max-width: 767px) {
+  body > * > .container {
+    padding-left: 0;
+    padding-right: 0;
+    /* Remove unwanted horizontal scroll bar on Phone/Tablet for Udem grid layout. */
+  }
+  body > * > .container > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body > * > .container > .row > [class*="col-md-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+#udem-breadcrumb {
+  background: #ffffff;
+  font-weight: 600;
+}
+#udem-breadcrumb a {
+  color: #333333;
+}
+#udem-breadcrumb .breadcrumb {
+  background: transparent;
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  #udem-breadcrumb .breadcrumb {
+    margin-bottom: 0;
+    font-size: 85%;
+    font-weight: normal;
+  }
+}
+#udem-primary-contents {
+  font-size: 15px;
+}
+#udem-primary-contents > .container {
+  margin-bottom: 20px;
+}
+/* Fix the footer to be always on bottom if the height of the screen is higher than the content of the page. */
+@media screen and (min-width: 601px) {
+  #udem-primary-contents {
+    flex: 1 1 auto;
+  }
+}

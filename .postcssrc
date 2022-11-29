@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "postcss-import": true,
+    "postcss-url": {
+      "url": "inline"
+    }
+  }
+}

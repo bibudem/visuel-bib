@@ -1,0 +1,12 @@
+.message-systeme {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS44NzUgMTYuMTQiPjxlbGxpcHNlIGN4PSI1LjkwNyIgY3k9IjYuMjU3IiBmaWxsPSIjZjI3NDIxIiByeD0iOS4yODMiIHJ5PSI5LjA3NiIvPjxlbGxpcHNlIGN4PSI2LjA0NSIgY3k9IjEwLjcxNCIgZmlsbD0iI2ZmZiIgcng9IjIuMTQiIHJ5PSIxLjk2OCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00LjI1OC0uMDU0bC41MDMgNy43M2gyLjcxbC40MjYtNy43M3oiLz48L3N2Zz4=")
+    no-repeat scroll left top transparent;
+  background-size: 9em;
+  border: 1px solid #dfe3e5;
+  padding: 2em 3em 2em 9em;
+}
+
+.message-systeme h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}

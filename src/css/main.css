@@ -1,0 +1,41 @@
+/* @import url("bootstrap.css"); */
+@import url("header.css");
+@import url("footer.css");
+@import url("primary-nav.css");
+@import url("primary-contents.css");
+@import url("message.css");
+@import url("base.css");
+
+#udem-primary-contents {
+  font-size: 15px;
+}
+
+h1,
+.h1 {
+  font-size: 32px;
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+}
+
+h3,
+.h3 {
+  font-size: 22px;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+}
+
+h5,
+.h5 {
+  font-size: 0.9375em;
+}
+
+h6,
+.h6 {
+  font-size: 0.9375em;
+}

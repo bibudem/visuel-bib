@@ -1,0 +1,4 @@
+{
+  "layouts": "src/templates/layouts",
+  "partials": "src/templates/partials"
+}
