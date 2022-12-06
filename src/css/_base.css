@@ -3,101 +3,260 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
 }
+
 footer,
 header,
 nav,
 section {
   display: block;
 }
+
 a {
   background-color: transparent;
 }
+
 a:active,
 a:hover {
   outline: 0;
 }
+
 b {
   font-weight: bold;
 }
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
 small {
   font-size: 80%;
 }
+
 img {
   border: 0;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
+
 button,
 input {
   color: inherit;
   font: inherit;
   margin: 0;
 }
+
 button {
   overflow: visible;
 }
+
 button {
   text-transform: none;
 }
+
 button {
   -webkit-appearance: button;
   cursor: pointer;
 }
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
 input {
   line-height: normal;
 }
+
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.form-control::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.input-group .form-control {
+  display: table-cell;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.input-group .form-control:focus {
+  z-index: 3;
+}
+
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.radio label,
+.checkbox label {
+  min-height: 22px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  line-height: normal;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid #0000;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: "Glyphicons Halflings";
-  font-style: normal;
-  font-weight: normal;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 1em;
+  height: 1em;
 }
-.glyphicon-search:before {
-  content: "\e003";
+
+.glyphicon-search::before {
+  content: '';
+  background: transparent url("data-url:/src/images/icons/icon-search.svg") no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
+
 .glyphicon-bookmark:before {
   content: "\e044";
 }
+
 .glyphicon-option-vertical:before {
   content: "\e235";
 }
+
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -105,28 +264,34 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
+
 input,
 button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
+
 a {
   color: #0053c0;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: #0053c0;
   text-decoration: underline;
 }
+
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
 img {
   vertical-align: middle;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -137,6 +302,7 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
   position: static;
@@ -146,6 +312,7 @@ img {
   overflow: visible;
   clip: auto;
 }
+
 h1,
 h2,
 h3 {
@@ -154,125 +321,111 @@ h3 {
   line-height: 1.1;
   color: inherit;
 }
+
 h1 small {
   font-weight: normal;
   line-height: 1;
   color: inherit;
 }
+
 h1,
 h2,
 h3 {
   margin-top: 22px;
   margin-bottom: 11px;
 }
+
 h1 small {
   font-size: 65%;
 }
+
 h1 {
   font-size: 32px;
 }
+
 h2 {
   font-size: 26px;
 }
+
 h3 {
   font-size: 22px;
 }
+
+h4,
+.h4 {
+  font-weight: 700;
+  line-height: 1.66666667;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
 p {
   margin: 0 0 11px;
 }
+
 small {
   font-size: 86%;
 }
+
 ul {
   margin-top: 0;
   margin-bottom: 11px;
 }
+
 ul ul {
   margin-bottom: 0;
 }
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-@media (min-width: 601px) {
-  .container {
-    width: auto;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    width: auto;
-  }
-}
-@media (min-width: 1240px) {
-  .container {
-    width: 1220px;
-  }
-}
-.row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-.col-md-2,
-.col-md-3,
-.col-md-12 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-@media (min-width: 768px) {
-  .col-md-2,
-  .col-md-3,
-  .col-md-12 {
-    float: left;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-2 {
-    width: 16.66666667%;
-  }
-}
+
+
 label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
 }
+
 input[type="radio"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   line-height: normal;
 }
+
 input[type="radio"]:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
 .nav {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
+
 .nav > li {
   position: relative;
   display: block;
 }
+
 .nav > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
+
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -284,47 +437,35 @@ input[type="radio"]:focus {
   content: " ";
   display: table;
 }
+
 .clearfix:after,
 .container:after,
 .row:after,
 .nav:after {
   clear: both;
 }
-@-ms-viewport {
-  width: device-width;
-}
-@media (max-width: 600px) {
-  .hidden-xs {
-    display: none !important;
-  }
-}
-@media (min-width: 601px) and (max-width: 767px) {
-  .hidden-sm {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 1239px) {
-  .hidden-md {
-    display: none !important;
-  }
-}
-@media (min-width: 1240px) {
-  .hidden-lg {
-    display: none !important;
-  }
-}
+
 h1 {
   color: inherit;
 }
+
 h2 {
   color: inherit;
 }
+
 h3 {
   color: inherit;
 }
+
 .csc-frame-default li {
   margin-bottom: 0.5em;
 }
+
+.csc-frame-default[class*="section_frame-"].last-of-section > .csc-text-text *:last-child,
+.csc-frame-default[class*="section_frame-"].last-of-section .csc-frame-default:not([class*="section_frame-"]) > .csc-text-text *:last-child {
+  margin-bottom: 0;
+}
+
 body {
   background-attachment: scroll;
   background-clip: border-box;
@@ -335,72 +476,86 @@ body {
   background-repeat: repeat;
   background-size: auto auto;
 }
+
 @media (max-width: 767px) {
   body > * > .container {
     padding-left: 0;
     padding-right: 0;
     /* Remove unwanted horizontal scroll bar on Phone/Tablet for Udem grid layout. */
   }
+
   body > * > .container > .row {
     margin-left: 0;
     margin-right: 0;
   }
+
   body > * > .container > .row > [class*="col-md-"] {
     padding-left: 0;
     padding-right: 0;
   }
 }
+
 @media (max-width: 767px) {
-  :not([class*="section_frame-"]):not(.udembootstrap_accordion-inner):not(.udembootstrap_tabs-tabbody)
-    > .csc-frame-default:not([class*="section_frame-"]).CType-text
-    > * {
+  :not([class*="section_frame-"]):not(.udembootstrap_accordion-inner):not(.udembootstrap_tabs-tabbody) > .csc-frame-default:not([class*="section_frame-"]).CType-text > * {
     margin-left: 10px;
     margin-right: 10px;
   }
 }
+
 /* Fix the footer to be always on bottom if the height of the screen is higher than the content of the page. */
 @media screen and (min-width: 601px) {
+
   html,
   body {
     height: 100%;
   }
+
   body {
     display: flex;
     flex-direction: column;
     /* Show correctly the debug infos with display flex on the body. */
   }
 }
+
 .row img {
   max-width: 100%;
   height: auto;
 }
+
 h1 {
   font-weight: 100;
   line-height: 1.1;
   margin-top: 0;
 }
+
 h3 {
   font-weight: 600;
   line-height: 1.5;
 }
+
 @media (min-width: 768px) and (max-width: 1239px) {
   h1 {
     font-size: 24px;
   }
+
   h2 {
     font-size: 19.5px;
   }
+
   h3 {
     font-size: 16.5px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1003.5px) {
   h1 {
     font-size: 21.33333333px;
   }
+
   h2 {
     font-size: 17.33333333px;
   }
+
   h3 {
     font-size: 15px;
   }

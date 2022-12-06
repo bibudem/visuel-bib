@@ -1,0 +1,87 @@
+#udem-primary-nav > .container > ul > li > .udem-mega-menu-item h4.udem-pastille-disciplines {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+  h4.udem-pastille-disciplines::before {
+    display: inline-block;
+    width: 70.5px;
+    height: 70.5px;
+    margin-top: -18px;
+    margin-right: 9px;
+    flex: 0 0 70.5px;
+  }
+}
+
+h4.udem-pastille-disciplines {
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  padding-top: 24px;
+}
+
+h4.udem-pastille-disciplines::before {
+  display: inline-block;
+  width: 94px;
+  height: 94px;
+  margin-top: -24px;
+  margin-right: 12px;
+  flex: 0 0 94px;
+}
+
+h4.udem-pastille-disciplines::before {
+  content: url("data-url:/src/images/megamenu/disciplines.svg");
+}
+
+#c74189 ul li > a::before,
+#c74191 ul li > a::before {
+  content: url("data-url:/src/images/icons/icon-chevron-right-blue.svg") !important;
+  width: 1em;
+  height: 1em;
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.bib-recherche-megamenu--container {
+  display: none !important;
+}
+
+/* .has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0;
+}
+
+.has-feedback label ~ .form-control-feedback {
+  top: 27px;
+}
+
+.bib-recherche-megamenu--container .form-control-feedback {
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 3;
+}
+
+.bib-recherche-megamenu--container .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.bib-recherche-megamenu--container .form-control-feedback::before {
+  position: absolute;
+  height: 1em;
+  width: 1em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */

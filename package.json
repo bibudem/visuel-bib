@@ -1,38 +1,46 @@
 {
-  "name": "parcel",
-  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Parcel.",
-  "version": "0.0.0",
+  "name": "visuel-bib",
+  "description": "Templates pour le visuel des Bibliothèques de l'Université de Montréal.",
+  "version": "1.0.0",
   "private": true,
-  "stackblitz": {
-    "startCommand": "npm start"
-  },
+  "type": "module",
   "targets": {
     "modern": {
       "engines": {
-        "browsers": "last 2 versions, not dead"
+        "browsers": "> 0.5%, last 2 versions, not dead"
       }
     }
   },
   "scripts": {
-    "dev": "rimraf dev && parcel serve --no-cache --public-url / --dist-dir dev src/*.html",
-    "build": "rimraf build/ && parcel build --no-content-hash --no-cache --target modern --dist-dir build src/*.html",
-    "serve": "serve build/",
+    "dev": "npm-run-all rimraf:dev fetch --parallel dev:parcel serve:dev",
+    "dev:parcel": "parcel watch --no-cache --public-url / --dist-dir dev src/**/*.html",
+    "build": "npm-run-all rimraf:build fetch build:parcel",
+    "build:parcel": "parcel build --no-content-hash --no-cache --target modern --dist-dir build src/**/*.html",
+    "rimraf:dev": "rimraf dev/",
+    "rimraf:build": "rimraf build/",
+    "serve:build": "serve build/",
+    "serve:dev": "serve dev/",
+    "fetch": "node lib/fetch-megamenu.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@parcel/optimizer-data-url": "^2.8.0",
     "@parcel/transformer-inline-string": "^2.8.0",
+    "@parcel/transformer-sass": "^2.8.0",
+    "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
+    "axios": "^1.2.0",
     "parcel": "^2.8.0",
     "parcel-namer-hashless": "^1.0.3",
     "postcss": "^8.4.19",
     "postcss-import": "^15.0.0",
     "postcss-url": "^10.1.3",
+    "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
     "serve": "^14.1.2"
   },
   "dependencies": {
-    "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
     "handlebars": "^4.7.7",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "npm-run-all": "^4.1.5"
   }
 }

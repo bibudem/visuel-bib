@@ -1,138 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="data-url:images/favicon.ico" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{#with (JSONparse (read 'package.json'))}}
+  <meta name="visuel-bib-version" content="{{ version }}" />
+  {{/with}}
+  <link rel="shortcut icon" type="image/x-icon" href="data-url:{{ baseUrl }}images/favicon.ico" />
 
-    <title>{{ title }} - Bibliothèques - Université de Montréal</title>
+  <title>{{ title }} - Bibliothèques - Université de Montréal</title>
 
-    <meta name="robots" content="noindex,follow" />
-    <meta name="google" content="notranslate" />
-    <meta name="apple-mobile-web-app-capable" content="no" />
+  <meta name="robots" content="noindex,follow" />
+  <meta name="google" content="notranslate" />
+  <meta name="apple-mobile-web-app-capable" content="no" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext" media="all" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext" media="all" />
 
-    <style>
-      @import "css/main.css";
-    </style>
+  <style>
+    @import "{{ baseUrl }}css/main.css";
+  </style>
 
-    <meta name="og:title" content="{{ title }}" />
-    <meta name="og:locale" content="fr_CA" />
-    <meta name="og:site_name" content="Bibliothèques - Université de Montréal" />
+  <meta name="og:title" content="{{ title }}" />
+  <meta name="og:locale" content="fr_CA" />
+  <meta name="og:site_name" content="Bibliothèques - Université de Montréal" />
 
-    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/udem.js"></script>
-  </head>
+  <script>
+    {{{read "node_modules/jquery/dist/jquery.slim.min.js" }}}
+  	{{{read "src/js/bootstrap.js" }}}
+  	{{{read "src/js/megamenu.js" }}}
+  </script>
+</head>
 
-  <body>
-    <a class="sr-only sr-only-focusable" href="#udem-primary-contents">Passer au contenu</a>
+<body>
+  <a class="sr-only sr-only-focusable" href="#udem-primary-contents">Passer au contenu</a>
 
-    {{> header }}
+  {{> header }}
 
-    {{> primary-nav }}
+  {{> primary-nav }}
 
-    <section id="udem-primary-contents" class="main-section">
+  <section id="udem-primary-contents" class="main-section">
+    <div class="container">
+      <div id="udem-breadcrumb">
+        <ul class="breadcrumb">
+          <li class="home"><a href="https://bib.umontreal.ca/">Accueil</a></li>
+          <li class="active">{{ title }}</li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <section class="content-main">
+            <div class="csc-frame csc-frame-default CType-html">
+              <div class="message-systeme">
+                {{{body}}}
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="udem-footer">
+    <div class="udem-footer-sitemap">
       <div class="container">
-        <div id="udem-breadcrumb">
-          <ul class="breadcrumb">
-            <li class="home"><a href="https://bib.umontreal.ca/">Accueil</a></li>
-            <li class="active">{{ title }}</li>
-          </ul>
-        </div>
+        <ul class="row nav">
+          <li class="col-md-2"><a href="https://bib.umontreal.ca/chercher">Chercher de l'information</a></li>
+          <li class="col-md-2"><a href="https://bib.umontreal.ca/explorer">Explorer par discipline</a></li>
+          <li class="col-md-2"><a href="https://bib.umontreal.ca/utiliser">Utiliser l'information</a></li>
+          <li class="col-md-2"><a href="https://bib.umontreal.ca/travailler">Travailler en bibliothèque</a></li>
+          <li class="col-md-2"><a href="https://bib.umontreal.ca/a-propos">À propos</a></li>
+          <li class="col-md-2"><a href="https://bib.umontreal.ca/coronavirus">FAQ Coronavirus</a></li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="udem-footer-contents">
+      <div class="container">
+        <h3>Les bibliothèques</h3>
         <div class="row">
-          <div class="col-md-12">
-            <section class="content-main">
-              <div class="csc-frame csc-frame-default CType-html">
-                <div class="message-systeme">
-                  {{{body}}}
-                </div>
+          <div class="col-md-3">
+            <div id="c82636" class="csc-frame csc-frame-default CType-text">
+              <div class="csc-text-text">
+                <p class="bodytext">
+                  <big><a href="https://bib.umontreal.ca/nous-joindre/clavarder">Clavarder avec nous</a></big><br /><big><a href="https://bib.umontreal.ca/nous-joindre/nous-ecrire">Nous écrire</a></big><br /><big>514 343-7643</big>
+                </p>
               </div>
-            </section>
+            </div>
+            <div id="c82639" class="csc-frame csc-frame-default CType-text">
+              <div class="csc-text-text">
+                <p class="bodytext"><big>Urgence 7771</big></p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="udem-footer">
-      <div class="udem-footer-sitemap">
-        <div class="container">
-          <ul class="row nav">
-            <li class="col-md-2"><a href="https://bib.umontreal.ca/chercher">Chercher de l'information</a></li>
-            <li class="col-md-2"><a href="https://bib.umontreal.ca/explorer">Explorer par discipline</a></li>
-            <li class="col-md-2"><a href="https://bib.umontreal.ca/utiliser">Utiliser l'information</a></li>
-            <li class="col-md-2"><a href="https://bib.umontreal.ca/travailler">Travailler en bibliothèque</a></li>
-            <li class="col-md-2"><a href="https://bib.umontreal.ca/a-propos">À propos</a></li>
-            <li class="col-md-2"><a href="https://bib.umontreal.ca/coronavirus">FAQ Coronavirus</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="udem-footer-contents">
-        <div class="container">
-          <h3>Les bibliothèques</h3>
-          <div class="row">
-            <div class="col-md-3">
-              <div id="c82636" class="csc-frame csc-frame-default CType-text">
-                <div class="csc-text-text">
-                  <p class="bodytext">
-                    <big><a href="https://bib.umontreal.ca/nous-joindre/clavarder">Clavarder avec nous</a></big><br /><big><a href="https://bib.umontreal.ca/nous-joindre/nous-ecrire">Nous écrire</a></big><br /><big>514 343-7643</big>
-                  </p>
-                </div>
-              </div>
-              <div id="c82639" class="csc-frame csc-frame-default CType-text">
-                <div class="csc-text-text">
-                  <p class="bodytext"><big>Urgence 7771</big></p>
-                </div>
+          <div class="col-md-3">
+            <div id="c82637" class="csc-frame csc-frame-default CType-text">
+              <div class="csc-text-text">
+                <p class="bodytext">
+                  <big><a href="https://bib.umontreal.ca/communications/nouvelles">Nouvelles</a><br /><a href="https://bib.umontreal.ca/les-bibliotheques-udem/offres-emploi">Offres d'emploi</a></big><br /><big><a href="https://bib.umontreal.ca/faire-un-don">Faire un don</a></big><br /><big><a href="https://bib.umontreal.ca/accessibilite">Accessibilité</a><br /><a href="https://bib.umontreal.ca/conditions-bibliotheques">Conditions d’utilisation du site des bibliothèques/UdeM</a></big>
+                </p>
               </div>
             </div>
-            <div class="col-md-3">
-              <div id="c82637" class="csc-frame csc-frame-default CType-text">
-                <div class="csc-text-text">
-                  <p class="bodytext">
-                    <big><a href="https://bib.umontreal.ca/communications/nouvelles">Nouvelles</a><br /><a href="https://bib.umontreal.ca/les-bibliotheques-udem/offres-emploi">Offres d'emploi</a></big><br /><big><a href="https://bib.umontreal.ca/faire-un-don">Faire un don</a></big><br /><big><a href="https://bib.umontreal.ca/accessibilite">Accessibilité</a><br /><a href="https://bib.umontreal.ca/conditions-bibliotheques">Conditions d’utilisation du site des bibliothèques/UdeM</a></big>
-                  </p>
-                </div>
+          </div>
+          <div class="col-md-3">
+            <div id="c95813" class="csc-frame csc-frame-default CType-text">
+              <div class="csc-text-text">
+                <p class="bodytext">
+                  <big><a href="https://bib.umontreal.ca/horaires">Horaires</a><br /><a href="https://bib.umontreal.ca/nous-joindre">Nous joindre</a><br /><a href="https://umontreal.account.worldcat.org/account">Mon dossier</a></big>
+                </p>
               </div>
             </div>
-            <div class="col-md-3">
-              <div id="c95813" class="csc-frame csc-frame-default CType-text">
-                <div class="csc-text-text">
-                  <p class="bodytext">
-                    <big><a href="https://bib.umontreal.ca/horaires">Horaires</a><br /><a href="https://bib.umontreal.ca/nous-joindre">Nous joindre</a><br /><a href="https://umontreal.account.worldcat.org/account">Mon dossier</a></big>
-                  </p>
-                </div>
+          </div>
+          <div class="col-md-3">
+            <div id="c83531" class="csc-frame csc-frame-default CType-text">
+              <div class="csc-text-text">
+                <p class="bodytext"><big>Suivez-nous sur les médias sociaux:</big></p>
               </div>
             </div>
-            <div class="col-md-3">
-              <div id="c83531" class="csc-frame csc-frame-default CType-text">
-                <div class="csc-text-text">
-                  <p class="bodytext"><big>Suivez-nous sur les médias sociaux:</big></p>
-                </div>
-              </div>
-              <div id="c82624" class="csc-frame csc-frame-default CType-text">
-                <div class="csc-text-text">
-                  <p class="bodytext">
-                    <a href="https://twitter.com/bibUdeM"><img src="data-url:images/icons/twitter.png" alt="Twitter" width="48" height="48" /></a>&nbsp;<a href="https://www.facebook.com/bibUdeM"><img src="data-url:images/icons/facebook.png" alt="Facebook" width="48" height="48" /></a>&nbsp;<a href="https://www.youtube.com/user/BibliothequesUdeM"><img src="data-url:images/icons/youtube.png" alt="Youtube" width="48" height="48" /></a>
-                  </p>
-                </div>
+            <div id="c82624" class="csc-frame csc-frame-default CType-text">
+              <div class="csc-text-text">
+                <p class="bodytext">
+                  <a href="https://twitter.com/bibUdeM"><img src="data-url:{{ baseUrl }}images/icons/twitter.png" alt="Twitter" width="48" height="48" /></a>&nbsp;<a href="https://www.facebook.com/bibUdeM"><img src="data-url:{{ baseUrl }}images/icons/facebook.png" alt="Facebook" width="48" height="48" /></a>&nbsp;<a href="https://www.youtube.com/user/BibliothequesUdeM"><img src="data-url:{{ baseUrl }}images/icons/youtube.png" alt="Youtube" width="48" height="48" /></a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="udem-footer-tail">
-        <div class="container">
-          <div><a href="https://secretariatgeneral.umontreal.ca/protection-et-acces-a-linformation/complement-dinformation-sur-la-confidentialite" title="Afficher le complément d’information sur la confidentialité">Confidentialité</a><a href="https://secretariatgeneral.umontreal.ca/protection-et-acces-a-linformation/conditions-dutilisation-des-plateformes-web" title="Afficher les conditions d’utilisation des plateformes Web">Conditions d’utilisation</a></div>
-          <a href="https://www.umontreal.ca/" title="Université de Montréal" class="udem-footer-logo">Université de Montréal</a>
-        </div>
+    <div class="udem-footer-tail">
+      <div class="container">
+        <div><a href="https://secretariatgeneral.umontreal.ca/protection-et-acces-a-linformation/complement-dinformation-sur-la-confidentialite" title="Afficher le complément d’information sur la confidentialité">Confidentialité</a><a href="https://secretariatgeneral.umontreal.ca/protection-et-acces-a-linformation/conditions-dutilisation-des-plateformes-web" title="Afficher les conditions d’utilisation des plateformes Web">Conditions d’utilisation</a></div>
+        <a href="https://www.umontreal.ca/" title="Université de Montréal" class="udem-footer-logo">Université de Montréal</a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 
 </html>

@@ -3,27 +3,35 @@
     <h2 class="sr-only">Navigation principale</h2>
     <ul class="nav mega-menu-enabled">
       <li class="home">
-        <a href="https://bib.umontreal.ca/" title="Accueil"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+        <a href="https://bib.umontreal.ca/" title="Accueil">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
               <path d="m512 0L0 489.69V1024h384V640h256v384h384V489.69zm0 60.331l469.33 447.57v473.43H682.66v-384H341.33v384H42.66v-473.43z"></path>
-            </svg><span class="hidden-md hidden-lg">Bibliothèques</span><span class="hidden-xs hidden-sm sr-only">Accueil</span></span></a>
+            </svg>
+            <span class="hidden-md hidden-lg">Bibliothèques</span><span class="hidden-xs hidden-sm sr-only">Accueil</span></span></a>
       </li>
-      <li data-udem-mega-menu-href="https://bib.umontreal.ca/chercher?type=795" class="has-sub udem_bootstrap__mega-menu-100">
+      <li data-udem-mega-menu-href="/chercher?type=795" class="has-sub udem_bootstrap__mega-menu-100{{#eq megaMenuItem 'chercher'}} active{{/eq}}">
         <a href="https://bib.umontreal.ca/chercher"><span><span>Chercher de l'information</span></span></a>
+        {{#if loadMegaMenu }}{{> megamenu/_chercher }}{{/if}}
       </li>
-      <li data-udem-mega-menu-href="https://bib.umontreal.ca/explorer?type=795" class="has-sub udem_bootstrap__mega-menu-100">
+      <li data-udem-mega-menu-href="/explorer?type=795" class="has-sub udem_bootstrap__mega-menu-100{{#eq megaMenuItem 'explorer'}} active{{/eq}}">
         <a href="https://bib.umontreal.ca/explorer"><span><span>Explorer par discipline</span></span></a>
+        {{#if loadMegaMenu }}{{> megamenu/_explorer }}{{/if}}
       </li>
-      <li data-udem-mega-menu-href="https://bib.umontreal.ca/utiliser?type=795" class="has-sub udem_bootstrap__mega-menu-100">
+      <li data-udem-mega-menu-href="/utiliser?type=795" class="has-sub udem_bootstrap__mega-menu-100{{#eq megaMenuItem 'utiliser'}} active{{/eq}}">
         <a href="https://bib.umontreal.ca/utiliser"><span><span>Utiliser l'information</span></span></a>
+        {{#if loadMegaMenu }}{{> megamenu/_utiliser }}{{/if}}
       </li>
-      <li data-udem-mega-menu-href="https://bib.umontreal.ca/travailler?type=795" class="has-sub udem_bootstrap__mega-menu-100">
+      <li data-udem-mega-menu-href="/travailler?type=795" class="has-sub udem_bootstrap__mega-menu-100{{#eq megaMenuItem 'travailler'}} active{{/eq}}">
         <a href="https://bib.umontreal.ca/travailler"><span><span>Travailler en bibliothèque</span></span></a>
+        {{#if loadMegaMenu }}{{> megamenu/_travailler }}{{/if}}
       </li>
-      <li data-udem-mega-menu-href="https://bib.umontreal.ca/a-propos?type=795" class="has-sub udem_bootstrap__mega-menu-100">
+      <li data-udem-mega-menu-href="/a-propos?type=795" class="has-sub udem_bootstrap__mega-menu-100{{#eq megaMenuItem 'a-propos'}} active{{/eq}}">
         <a href="https://bib.umontreal.ca/a-propos"><span><span>À propos</span></span></a>
+        {{#if loadMegaMenu }}{{> megamenu/_a-propos }}{{/if}}
       </li>
       <li data-udem-mega-menu-show-delay="200" data-udem-mega-menu-hide-delay="175">
-        <a href="https://bib.umontreal.ca/coronavirus" class="p20281"><span><span>FAQ Coronavirus</span></span></a>
+        <a href="https://bib.umontreal.ca/coronavirus"><span><span>FAQ Coronavirus</span></span></a>
       </li>
     </ul>
   </nav>

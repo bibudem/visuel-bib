@@ -1,0 +1,409 @@
+.CType-udembib_recherche_sofia input::-ms-clear {
+  display: none;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia > div {
+  width: 100%;
+}
+
+.CType-udembib_recherche_sofia .input-label {
+  margin: 0 13px 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.CType-udembib_recherche_sofia .input-group {
+  font-weight: 500;
+}
+
+.CType-udembib_recherche_sofia .input-group-btn > .btn {
+  margin: 0;
+  border: 0;
+}
+
+.CType-udembib_recherche_sofia .btn-default:hover {
+  background: none;
+}
+
+.CType-udembib_recherche_sofia .close {
+  font-size: 26px;
+  line-height: 1;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.6;
+  filter: alpha(opacity=20);
+  position: absolute;
+  left: -26px;
+  top: 6px;
+  display: none;
+  z-index: 3;
+}
+
+.CType-udembib_recherche_sofia .checkbox {
+  float: left;
+}
+
+.CType-udembib_recherche_sofia .udembib-recherche-sofia-index {
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+@media (min-width: 640px) {
+  .CType-udembib_recherche_sofia .udembib-recherche-sofia-index {
+    display: table-cell;
+    width: 7em;
+  }
+}
+
+.CType-udembib_recherche_sofia .udembib-recherche-sofia-index > select {
+  font-weight: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@media (min-width: 640px) {
+  .CType-udembib_recherche_sofia .udembib-recherche-sofia-index > select {
+    border-right: 0;
+  }
+}
+
+.CType-udembib_recherche_sofia .udembib-recherche-sofia-index > select::-ms-expand {
+  display: none;
+}
+
+.CType-udembib_recherche_sofia .udembib-recherche-sofia-index::after {
+  content: "";
+  display: block;
+  background: transparent url('data-url:/src/images/icons/icon-chevron-down.svg') no-repeat right center;
+  position: absolute;
+  top: 0;
+  right: .5em;
+  height: 2.75em;
+  z-index: 5;
+  pointer-events: none;
+  width: 1em;
+}
+
+.CType-udembib_recherche_sofia .recherche-avancee {
+  float: right;
+}
+
+.CType-udembib_recherche_sofia .recherche-avancee > a {
+  display: block;
+  position: relative;
+  padding: 10px 30px 10px 10px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.CType-udembib_recherche_sofia .recherche-avancee > a::before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  background: transparent url("data-url:/src/images/icons/icon-chevron-right-blue.svg") no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.CType-udembib_recherche_sofia .recherche-avancee > a:hover::before {
+  color: #4169b2;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia {
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  padding-top: 24px;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia::before {
+  display: inline-block;
+  width: 94px;
+  height: 94px;
+  margin-top: -24px;
+  margin-right: 12px;
+  flex: 0 0 94px;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  color: inherit;
+  max-width: 100%;
+  align-items: baseline;
+  -webkit-align-items: baseline;
+  margin-left: -106px;
+  padding-left: 106px;
+  margin-top: -24px;
+  padding-top: 24px;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a::after {
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e258";
+  color: #3a63ac;
+  transform: translate(0, 30%);
+  font-size: 1.4em;
+  margin-left: 5px;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:hover::after {
+  color: #719ffa;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:hover,
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:active,
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:focus {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  :not([class*="section_frame-"]) > :not(.udembootstrap_accordion-inner):not(.udembootstrap_tabs-tabbody) > .csc-frame-default:not([class*="section_frame-"]) *:not([class*="csc-text-text"]) > .CType-udembib_recherche_sofia .udem-pastille-collection-sofia {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia {
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 1 auto;
+    padding-top: 18px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia::before {
+    display: inline-block;
+    width: 70.5px;
+    height: 70.5px;
+    margin-top: -18px;
+    margin-right: 9px;
+    flex: 0 0 70.5px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    color: inherit;
+    max-width: 100%;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    margin-left: -79.5px;
+    padding-left: 79.5px;
+    margin-top: -18px;
+    padding-top: 18px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a::after {
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e258";
+    color: #3a63ac;
+    transform: translate(0, 30%);
+    font-size: 1.05em;
+    margin-left: 3.75px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:hover::after {
+    color: #719ffa;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:hover,
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:active,
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:focus {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) and (max-width: 767px) {
+  :not([class*="section_frame-"]) > :not(.udembootstrap_accordion-inner):not(.udembootstrap_tabs-tabbody) > .csc-frame-default:not([class*="section_frame-"]) *:not([class*="csc-text-text"]) > .CType-udembib_recherche_sofia .udem-pastille-collection-sofia {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1003.5px) {
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia {
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 1 auto;
+    padding-top: 16px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia::before {
+    display: inline-block;
+    width: 62.66666667px;
+    height: 62.66666667px;
+    margin-top: -16px;
+    margin-right: 8px;
+    flex: 0 0 62.66666667px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    color: inherit;
+    max-width: 100%;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    margin-left: -70.66666667px;
+    padding-left: 70.66666667px;
+    margin-top: -16px;
+    padding-top: 16px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a::after {
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e258";
+    color: #3a63ac;
+    transform: translate(0, 30%);
+    font-size: 0.93333333em;
+    margin-left: 3.33333333px;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:hover::after {
+    color: #719ffa;
+  }
+
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:hover,
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:active,
+  .CType-udembib_recherche_sofia .udem-pastille-collection-sofia > a:focus {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1003.5px) and (max-width: 767px) {
+  :not([class*="section_frame-"]) > :not(.udembootstrap_accordion-inner):not(.udembootstrap_tabs-tabbody) > .csc-frame-default:not([class*="section_frame-"]) *:not([class*="csc-text-text"]) > .CType-udembib_recherche_sofia .udem-pastille-collection-sofia {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia::before {
+  content: url("data-url:/src/images/megamenu/collection-sofia.svg");
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia-large {
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  padding-top: 50px;
+  padding-top: 70px;
+  margin-bottom: 10px;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia-large::before {
+  display: inline-block;
+  width: 118px;
+  height: 118px;
+  margin-top: -50px;
+  margin-right: 12px;
+  flex: 0 0 118px;
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia-large > a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  color: inherit;
+  max-width: 100%;
+  align-items: baseline;
+  -webkit-align-items: baseline;
+  margin-left: -130px;
+  padding-left: 130px;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+  :not([class*="section_frame-"]) > :not(.udembootstrap_accordion-inner):not(.udembootstrap_tabs-tabbody) > .csc-frame-default:not([class*="section_frame-"]) *:not([class*="csc-text-text"]) > .CType-udembib_recherche_sofia .udem-pastille-collection-sofia-large {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia-large.udem-pastille-collection-sofia-large::before {
+  content: url("data-url:/src/images/megamenu/collection-sofia.svg");
+}
+
+.CType-udembib_recherche_sofia .udem-pastille-collection-sofia-large > div {
+  width: 100%;
+}
+
+.CType-udembib_recherche_sofia .glyphicon-search {
+  width: 20px;
+  height: 20px;
+}
+
+#c67009 {
+  background: #0000;
+  padding-top: 0;
+}
+
+.udem-mega-menu-item .udem-mega-menu-inner .CType-gridelements_pi1 > .row > [class*="col-"] > [class*="section_frame"]:not(.section_frame-101):not(.section_frame-104) {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+[class*="section_frame"]:not(.section_frame-101) {
+  margin: 0 0 20px 0;
+}
+
+.section_frame-107 {
+  padding: 20px 20px 0 20px;
+  border: 0px solid #ffffff80;
+  box-shadow: 0 0 0px #555555;
+  background: #efefef;
+  color: #000;
+}
+
+.csc-frame-default .csc-text-text li {
+  margin-bottom: 0;
+}
+
+#c119959 li > a::before,
+#c70124 li > a::before {
+  content: '' !important;
+  width: 1em;
+  height: 1em;
+  background: transparent url("data-url:/src/images/icons/icon-chevron-right-blue.svg") no-repeat !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%);
+  font: unset !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

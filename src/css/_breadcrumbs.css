@@ -5,28 +5,35 @@
   background-color: #ffffff;
   border-radius: 0;
 }
+
 .breadcrumb > li {
   display: inline-block;
 }
+
 .breadcrumb > li + li:before {
   content: "/\00a0";
   padding: 0 5px;
   color: #333333;
 }
+
 .breadcrumb > .active {
   color: #48566b;
 }
+
 #udem-breadcrumb {
   background: #ffffff;
   font-weight: 600;
 }
+
 #udem-breadcrumb a {
   color: #333333;
 }
+
 #udem-breadcrumb .breadcrumb {
   background: transparent;
   font-size: 13px;
 }
+
 @media (max-width: 767px) {
   #udem-breadcrumb .breadcrumb {
     margin-bottom: 0;

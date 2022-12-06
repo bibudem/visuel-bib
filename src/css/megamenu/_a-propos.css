@@ -1,0 +1,53 @@
+#udem-primary-nav > .container > ul > li > .udem-mega-menu-item h4.udem-pastille-donation {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+  h4.udem-pastille-donation::before {
+    display: inline-block;
+    width: 70.5px;
+    height: 70.5px;
+    margin-top: -18px;
+    margin-right: 9px;
+    flex: 0 0 70.5px;
+  }
+
+  h4.udem-pastille-donation {
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 1 auto;
+    padding-top: 18px;
+  }
+
+  h4.udem-pastille-donation > a {
+    display: flex;
+    flex: 0 0 auto;
+    color: inherit;
+    max-width: 100%;
+    align-items: baseline;
+    margin-left: -79.5px;
+    padding-left: 79.5px;
+    margin-top: -18px;
+    padding-top: 18px;
+  }
+
+  h4.udem-pastille-donation > a::after {
+    content: url("data-url:/src/images/icons/icon-chevron-right-blue.svg");
+    width: 25.85px;
+    position: relative;
+    top: 4px;
+    right: 0;
+    padding: 0;
+    margin-left: 3.75px
+  }
+}
+
+h4.udem-pastille-donation::before {
+  content: url("data-url:/src/images/megamenu/don.svg");
+  display: inline-block;
+  width: 70.5px;
+  height: 70.5px;
+  margin-top: -18px;
+  margin-right: 9px;
+  flex: 0 0 70.5px;
+}

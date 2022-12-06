@@ -1,10 +1,12 @@
-/* @import url("bootstrap.css"); */
-@import url("header.css");
-@import url("footer.css");
-@import url("primary-nav.css");
-@import url("primary-contents.css");
-@import url("message.css");
-@import url("base.css");
+@import url("_responsive.css");
+@import url("_header.css");
+@import url("_footer.css");
+@import url("_primary-nav.css");
+@import url("_megamenu.css");
+@import url("_breadcrumbs.css");
+@import url("_primary-contents.css");
+@import url("_message.css");
+@import url("_base.css");
 
 #udem-primary-contents {
   font-size: 15px;

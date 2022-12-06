@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{#with (JSONparse (read 'package.json'))}}
+  <meta name="visuel-bib-version" content="{{ version }}" />
+  {{/with}}
+
+  <script>{{{read "node_modules/jquery/dist/jquery.slim.js" }}}</script>
+
+  {{> libcal/custom-js-css-code }}
+
+  <style>
+    @import "{{ baseUrl }}css/_primary-contents.css";
+    @import "{{ baseUrl }}css/_base.css";
+  </style>
+</head>
+
+<body>
+
+  {{> libcal/custom-header-code }}
+
+  <section id="udem-primary-contents" class="main-section">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <section class="content-main">
+            <div class="csc-frame csc-frame-default CType-html">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum ex. Maecenas congue nisl vel ipsum luctus, pretium tristique nisl tristique. Sed interdum eu libero at ultricies. Curabitur dapibus, nulla nec dictum euismod, magna ex ultricies dolor, quis interdum nibh libero eget neque. Aliquam ac libero id metus cursus dictum. Curabitur ut lorem vitae ante tincidunt egestas. Maecenas sit amet est ut lacus pharetra semper interdum quis enim. Aliquam convallis tristique faucibus. Morbi tincidunt nisi imperdiet mattis sollicitudin.
+              </p>
+              <p>
+                Sed erat nunc, semper vel quam ut, porttitor tempus eros. Donec ultrices volutpat nisi, ac varius libero ultricies eget. Sed pretium ac nisl at bibendum. Proin quis euismod ante. Etiam accumsan tristique nulla. Praesent lectus ante, feugiat et ex vitae, dictum gravida ante. Nullam nec felis ornare, pretium risus et, aliquet ante. Proin dictum pellentesque dui, non consequat nisl blandit at. Curabitur tincidunt nibh sit amet fringilla elementum. Nam ornare blandit tellus, a mattis velit tincidunt sit amet.
+              </p>
+              <p>
+                Curabitur dignissim cursus ante in euismod. Sed placerat pellentesque ornare. Curabitur efficitur dui in ultrices molestie. In hac habitasse platea dictumst. Nunc vulputate, diam eu consequat molestie, justo diam fermentum ante, ac ornare lectus turpis eu lectus. Nunc lobortis vestibulum neque, id cursus sapien. Proin commodo non lectus ac interdum. Sed elementum turpis non urna elementum fringilla. Praesent vulputate convallis orci tristique lobortis. Phasellus est arcu, facilisis in ex ut, malesuada porta felis.
+              </p>
+              <p>
+                Fusce turpis sapien, maximus sed feugiat nec, bibendum consectetur ante. Donec consequat pellentesque odio, id commodo libero molestie vel. Morbi id convallis turpis. Nam pulvinar velit in velit consectetur porta. Etiam egestas nisl nec magna consectetur, id egestas ex volutpat. Pellentesque eget luctus est. Nullam odio velit, pulvinar sed eleifend nec, finibus non nulla. Donec convallis eros eget velit efficitur posuere. Pellentesque metus sem, varius eget sapien et, eleifend molestie eros. Nulla pellentesque ante a blandit elementum. Morbi imperdiet vitae metus in interdum. Quisque sapien sem, posuere ac orci vel, efficitur efficitur sapien.
+              </p>
+              <p>
+                Vestibulum tempor purus congue arcu porttitor ultricies ut a urna. Proin porttitor, nisi vitae tempor rhoncus, mauris magna lacinia augue, id tincidunt lectus massa non magna. Nulla et neque eget elit dapibus convallis id et ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eu nibh luctus, tristique sem eu, mollis augue. Suspendisse a tellus ultricies, scelerisque lacus ac, condimentum diam. Vivamus et dictum tortor. Morbi interdum ornare convallis. Vivamus justo magna, accumsan at elit nec, tempus elementum libero. Fusce tristique massa non diam congue, non congue lorem mollis. Curabitur quis quam tristique, aliquam dui nec, fermentum tortor. Duis aliquet leo id turpis molestie dapibus. Pellentesque nisl eros, commodo non lorem vel, cursus vulputate est. Maecenas congue odio in scelerisque euismod. Vivamus eget aliquet odio. Duis tempor massa risus, id lacinia erat fermentum at.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

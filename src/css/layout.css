@@ -127,14 +127,10 @@ input[type="radio"] {
   content: "\e235";
 }
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -315,9 +311,6 @@ input[type="radio"]:focus {
   font-size: 15px;
   line-height: 1.5;
   border-radius: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 .caret {
@@ -354,7 +347,6 @@ input[type="radio"]:focus {
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
@@ -426,9 +418,6 @@ input[type="radio"]:focus {
 .row:after,
 .nav:after {
   clear: both;
-}
-@-ms-viewport {
-  width: device-width;
 }
 @media (max-width: 600px) {
   .hidden-xs {
@@ -509,8 +498,8 @@ body {
   vertical-align: bottom;
   width: 102px;
   height: 40px;
-  background: transparent url("data-url:./images/udem-logo.svg") no-repeat left
-    bottom;
+  background: transparent url("data-url:/src/images/udem-logo.svg") no-repeat
+    left bottom;
 }
 #udem-header #udem-header-logo-separator {
   display: table-cell;
@@ -560,7 +549,7 @@ body {
   #udem-header #udem-header-logo {
     width: 153px;
     height: 60px;
-    background: transparent url("data-url:./images/udem-logo.svg") no-repeat
+    background: transparent url("data-url:/src/images/udem-logo.svg") no-repeat
       left bottom;
     left: 10px;
   }
@@ -777,17 +766,10 @@ body {
   left: 2px;
   right: 2px;
   height: 4px;
-  -webkit-transform-origin: 50% 50% 0;
-  -moz-transform-origin: 50% 50% 0;
-  -ms-transform-origin: 50% 50% 0;
   transform-origin: 50% 50% 0;
-  -webkit-transition-property: transform, opacity, left, right, top, height,
-    background-color;
   transition-property: transform, opacity, left, right, top, height,
     background-color;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 #udem-phone-menu .udem-phone-menu-primary > b > span:nth-child(1) {
@@ -806,27 +788,18 @@ body {
   .udem-phone-menu-primary:not(.collapsed)
   > b
   > span:nth-child(1) {
-  -webkit-transform: translate(-4.9px, 3.1px) rotate(45deg) scale(0.71, 1);
-  -ms-transform: translate(-4.9px, 3.1px) rotate(45deg) scale(0.71, 1);
-  -o-transform: translate(-4.9px, 3.1px) rotate(45deg) scale(0.71, 1);
   transform: translate(-4.9px, 3.1px) rotate(45deg) scale(0.71, 1);
 }
 #udem-phone-menu
   .udem-phone-menu-primary:not(.collapsed)
   > b
   > span:nth-child(2) {
-  -webkit-transform: rotate(-45deg) scale(1.41, 1);
-  -ms-transform: rotate(-45deg) scale(1.41, 1);
-  -o-transform: rotate(-45deg) scale(1.41, 1);
   transform: rotate(-45deg) scale(1.41, 1);
 }
 #udem-phone-menu
   .udem-phone-menu-primary:not(.collapsed)
   > b
   > span:nth-child(3) {
-  -webkit-transform: translate(4.9px, -3.1px) rotate(45deg) scale(0.71, 1);
-  -ms-transform: translate(4.9px, -3.1px) rotate(45deg) scale(0.71, 1);
-  -o-transform: translate(4.9px, -3.1px) rotate(45deg) scale(0.71, 1);
   transform: translate(4.9px, -3.1px) rotate(45deg) scale(0.71, 1);
 }
 #udem-breadcrumb {
@@ -930,7 +903,6 @@ body {
     font-size: inherit;
     border: 0;
     border-radius: 0;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -1095,33 +1067,11 @@ body {
   }
   #udem-primary-nav > .container > ul {
     display: block;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -moz-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
     align-content: stretch;
-    -webkit-box-align: stretch;
-    -moz-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
     align-items: stretch;
   }
   #udem-primary-nav > .container > ul:before,
@@ -1143,13 +1093,7 @@ body {
   #udem-primary-nav > .container > ul > * {
     display: block;
     float: left;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1 0 0%;
-    -ms-flex: 1 0 0%;
     flex: 1 0 0%;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
     align-self: auto;
   }
   #udem-primary-nav > .container > ul > li {
@@ -1202,10 +1146,6 @@ body {
     font-weight: 600;
   }
   #udem-primary-nav > .container > ul > li.home {
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
-    -webkit-flex: 0 0 0%;
-    -ms-flex: 0 0 0%;
     flex: 0 0 0%;
     min-width: 50px;
     padding-left: 0;
@@ -1269,33 +1209,11 @@ body {
 }
 #udem-footer .udem-footer-sitemap ul.row {
   display: block;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
   align-content: stretch;
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
 }
 #udem-footer .udem-footer-sitemap ul.row:before,
@@ -1317,13 +1235,7 @@ body {
 #udem-footer .udem-footer-sitemap ul.row > * {
   display: block;
   float: left;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1 0 0%;
-  -ms-flex: 1 0 0%;
   flex: 1 0 0%;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
   align-self: auto;
 }
 #udem-footer .udem-footer-sitemap ul.row > li > a {
@@ -1410,8 +1322,8 @@ body {
   overflow: hidden;
   padding: 0;
   border: 0;
-  background: transparent url("data-url:./images/udem-logo-white.svg") no-repeat
-    left bottom;
+  background: transparent url("data-url:/src/images/udem-logo-white.svg")
+    no-repeat left bottom;
   background-size: contain;
   max-width: 100px;
   height: 0;
