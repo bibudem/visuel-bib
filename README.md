@@ -1,16 +1,10 @@
-# Bootstrap w/ Parcel
+# Templates pour le visuel des Bibliothèques de l'Université de Montréal
 
-Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaScript plugins with [Parcel](https://parceljs.org).
-
-## Edit in browser
-
-_Unfortunately, Parcel does not support StackBlitz, so you'll have to clone this project to use it._
-
-## How to use
+## Installation
 
 ```sh
-git clone https://github.com/twbs/examples.git
-cd examples/parcel/
+git clone https://github.com/bibudem/visuel-bib.git
+cd visuel-bib/
 npm install
-npm start
+npm run build
 ```
