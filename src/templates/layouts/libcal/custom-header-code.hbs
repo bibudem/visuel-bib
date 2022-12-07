@@ -1,18 +1,18 @@
-<!-- 
+<!--! 
   ================================
   Custom Header Code Begin 
   ================================
 -->
 
 {{#with (JSONparse (read 'package.json'))}}
-<meta name="visuel-bib-version" content="{{ version }}" />
+<!--! visuel-bib v{{ version }} -->
 {{/with}}
 
 {{> header }}
 
 {{> primary-nav }}
 
-<!-- 
+<!--! 
   ================================
   Custom Header Code End 
   ================================
