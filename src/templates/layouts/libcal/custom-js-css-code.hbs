@@ -4,15 +4,25 @@
 <!--! visuel-bib v{{ version }} -->
 {{/with}}
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext" media="all" />
+{{!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext" media="all" /> --}}
 
-<style>
+{{!-- <style>
   @import "{{ baseUrl }}css/libcal.css";
-</style>
+</style> --}}
 
-<script>
+<link rel="stylesheet" href="{{ baseUrl }}css/libcal.css">
+
+{{!-- <script>
   {{{read "src/js/bootstrap.js" }}}
   {{#if loadMegaMenu }}{{{read "src/js/megamenu.js" }}}{{/if}}
-</script>
+</script> --}}
+
+{{!-- <script src="../js/bootstrap.js"></script>
+{{#if loadMegaMenu }}<script src="../js/megamenu.js"></script>{{/if}} --}}
+{{#if loadMegaMenu }}
+<script type="module" src="../js/custom-js-code-with-megamenu.js"></script>
+{{else}}
+<script type="module" src="../js/custom-js-code.js"></script>
+{{/if}}
 
 <!--! ### Custom JS/CSS Code End ### -->

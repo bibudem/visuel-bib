@@ -3,9 +3,17 @@
     "@parcel/config-default"
   ],
   "transformers": {
+    "*.js": [
+      "@cimonitor/parcel-transformer-package-version",
+      "..."
+    ],
     "*.{hbs,html,txt}": [
       "@partiellkorrekt/parcel-transformer-handlebars",
       "..."
     ]
-  }
+  },
+  "namers": [
+    "parcel-namer-custom",
+    "..."
+  ]
 }
