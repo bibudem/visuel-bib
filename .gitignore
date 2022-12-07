@@ -3,3 +3,4 @@
 node_modules/
 dev/
 build/_*
+/src/images/glyphicons-halflings-regular.svg
