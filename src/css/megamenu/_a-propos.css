@@ -33,12 +33,12 @@
 
   h4.udem-pastille-donation > a::after {
     content: url("data-url:/src/images/icons/icon-chevron-right-blue.svg");
-    width: 25.85px;
+    width: .9em;
     position: relative;
     top: 4px;
     right: 0;
     padding: 0;
-    margin-left: 3.75px
+    margin-left: 5.75px
   }
 }
 

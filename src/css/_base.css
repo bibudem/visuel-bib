@@ -560,3 +560,36 @@ h3 {
     font-size: 15px;
   }
 }
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #48566b;
+  border-color: #3e4a5c;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #333d4d;
+  border-color: #252c37;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
