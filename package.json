@@ -30,7 +30,6 @@
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
     "axios": "^1.2.0",
     "parcel": "^2.8.0",
-    "parcel-namer-hashless": "^1.0.3",
     "postcss": "^8.4.19",
     "postcss-import": "^15.0.1",
     "postcss-url": "^10.1.3",
