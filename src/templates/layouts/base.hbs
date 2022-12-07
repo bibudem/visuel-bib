@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+{{#with (JSONparse (read 'package.json'))}}
+<!--! visuel-bib v{{ version }} -->
+{{/with}}
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {{#with (JSONparse (read 'package.json'))}}
-  <meta name="visuel-bib-version" content="{{ version }}" />
-  {{/with}}
   <link rel="shortcut icon" type="image/x-icon" href="data-url:{{ baseUrl }}images/favicon.ico" />
 
   <title>{{ title }} - Bibliothèques - Université de Montréal</title>
@@ -29,7 +30,7 @@
   <script>
     {{{read "node_modules/jquery/dist/jquery.slim.min.js" }}}
   	{{{read "src/js/bootstrap.js" }}}
-  	{{{read "src/js/megamenu.js" }}}
+  	{{#if loadMegaMenu }}{{{read "src/js/megamenu.js" }}}{{/if}}
   </script>
 </head>
 
