@@ -35,7 +35,7 @@
     "@parcel/transformer-sass": "^2.8.0",
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
     "axios": "^1.2.0",
-    "parcel": "^2.8.0",
+    "parcel": "^2.8.1",
     "parcel-namer-custom": "^0.2.0",
     "postcss": "^8.4.19",
     "postcss-import": "^15.0.1",
