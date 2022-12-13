@@ -39,28 +39,6 @@
   }
 }
 
-#udem-breadcrumb {
-  background: #ffffff;
-  font-weight: 600;
-}
-
-#udem-breadcrumb a {
-  color: #333333;
-}
-
-#udem-breadcrumb .breadcrumb {
-  background: transparent;
-  font-size: 13px;
-}
-
-@media (max-width: 767px) {
-  #udem-breadcrumb .breadcrumb {
-    margin-bottom: 0;
-    font-size: 85%;
-    font-weight: normal;
-  }
-}
-
 #udem-primary-contents {
   font-size: 15px;
 }

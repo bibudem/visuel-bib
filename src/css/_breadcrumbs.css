@@ -41,3 +41,20 @@
     font-weight: normal;
   }
 }
+
+@media print {
+  #udem-breadcrumb a[href]::after {
+    content: none;
+  }
+
+  #udem-breadcrumb .breadcrumb {
+    padding: 0 10px;
+    margin: 0;
+  }
+}
+
+@media print and (min-width: 768px) {
+  #udem-breadcrumb .breadcrumb {
+    padding: 0;
+  }
+}
