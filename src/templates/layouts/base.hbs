@@ -29,7 +29,7 @@
 
   <script>
     {{{read "node_modules/jquery/dist/jquery.slim.min.js" }}}
-  	{{{read "src/js/bootstrap.js" }}}
+  	{{{read "src/js/vendors/bootstrap.js" }}}
   	{{#if loadMegaMenu }}{{{read "src/js/megamenu.js" }}}{{/if}}
   </script>
 </head>
@@ -40,6 +40,8 @@
   {{> header }}
 
   {{> primary-nav }}
+
+  {{> alertes }}
 
   <section id="udem-primary-contents" class="main-section">
     <div class="container">

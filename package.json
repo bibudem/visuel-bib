@@ -7,8 +7,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "parcel-namer-custom": {
     "libcal.css$": "LibCal/custom-css-code.css",
-    "custom-js-code.js$": "LibCal/custom-js-code.[type]",
-    "custom-js-code-with-megamenu.js$": "LibCal/custom-js-code-with-megamenu.[type]"
+    "custom-js-code$": "LibCal/custom-js-code.[hash].js"
   },
   "scripts": {
     "dev": "npm-run-all rimraf:dev fetch --parallel dev:parcel serve:dev",

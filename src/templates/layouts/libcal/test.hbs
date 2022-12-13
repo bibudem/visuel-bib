@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+{{#with (JSONparse (read 'package.json'))}}
+<!--! visuel-bib v{{ version }} -->
+{{/with}}
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {{#with (JSONparse (read 'package.json'))}}
-  <meta name="visuel-bib-version" content="{{ version }}" />
-  {{/with}}
 
-  <script>{{{read "node_modules/jquery/dist/jquery.slim.js" }}}</script>
+  <script>{{{read "node_modules/jquery/dist/jquery.js" }}}</script>
+  <script>{{{read "src/js/vendors/bootstrap.js" }}}</script>
 
   {{> libcal/custom-js-css-code }}
 
