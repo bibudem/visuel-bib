@@ -1,7 +1,7 @@
 {
   "name": "visuel-bib",
   "description": "Templates pour le visuel des Bibliothèques de l'Université de Montréal.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "type": "module",
   "browserslist": "> 0.5%, last 2 versions, not dead",
