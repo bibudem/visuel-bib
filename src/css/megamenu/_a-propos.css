@@ -2,52 +2,41 @@
   overflow: hidden;
 }
 
-@media (min-width: 768px) and (max-width: 1239px) {
-  h4.udem-pastille-donation::before {
-    display: inline-block;
-    width: 70.5px;
-    height: 70.5px;
-    margin-top: -18px;
-    margin-right: 9px;
-    flex: 0 0 70.5px;
-  }
+h4.udem-pastille-donation {
+  display: flex;
+  flex: 1 1 auto;
+  padding-top: 24px;
+}
 
-  h4.udem-pastille-donation {
-    display: -webkit-flex;
-    display: flex;
-    flex: 1 1 auto;
-    padding-top: 18px;
-  }
+h4.udem-pastille-donation > a {
+  display: flex;
+  flex: 0 0 auto;
+  color: inherit;
+  max-width: 100%;
+  /* align-items: baseline; */
+  margin-left: -106px;
+  padding-left: 106px;
+  margin-top: -24px;
+  padding-top: 24px;
+}
 
-  h4.udem-pastille-donation > a {
-    display: flex;
-    flex: 0 0 auto;
-    color: inherit;
-    max-width: 100%;
-    align-items: baseline;
-    margin-left: -79.5px;
-    padding-left: 79.5px;
-    margin-top: -18px;
-    padding-top: 18px;
-  }
-
-  h4.udem-pastille-donation > a::after {
-    content: url("data-url:/src/images/icons/icon-chevron-right-blue.svg");
-    width: .9em;
-    position: relative;
-    top: 4px;
-    right: 0;
-    padding: 0;
-    margin-left: 5.75px
-  }
+h4.udem-pastille-donation > a::after {
+  content: url("data-url:/src/images/icons/icon-chevron-right-blue.svg");
+  width: 0.9em;
+  margin-left: 5.75px;
+  padding: 0;
+  font-size: 1.7em;
+  position: relative;
+  top: -4px;
+  right: 0;
 }
 
 h4.udem-pastille-donation::before {
   content: url("data-url:/src/images/megamenu/don.svg");
+  width: 94px;
+  height: 94px;
+  flex: 0 0 94px;
+  margin-top: -24px;
+  margin-right: 12px;
   display: inline-block;
-  width: 70.5px;
-  height: 70.5px;
-  margin-top: -18px;
-  margin-right: 9px;
-  flex: 0 0 70.5px;
 }

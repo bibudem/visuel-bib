@@ -6,8 +6,9 @@
   "type": "module",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "parcel-namer-custom": {
-    "libcal.css$": "LibCal/custom-css-code.css",
-    "custom-js-code$": "LibCal/custom-js-code.[hash].js"
+    "libcal.css$": "LibCal/custom-css.css",
+    "custom-js-code.js$": "LibCal/custom-js.[hash].js",
+    "custom-js-code-with-megamenu.js$": "LibCal/custom-js.[hash].js"
   },
   "scripts": {
     "dev": "npm-run-all rimraf:dev fetch --parallel dev:parcel serve:dev",
@@ -19,7 +20,7 @@
     "serve:build": "serve build/",
     "serve:dev": "serve dev/",
     "fetch": "node lib/fetch-megamenu.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix-build": "node lib/fix-file-hash.js"
   },
   "dependencies": {
     "handlebars": "^4.7.7",
@@ -34,6 +35,7 @@
     "@parcel/transformer-sass": "^2.8.1",
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
     "axios": "^1.2.1",
+    "jsdom": "^20.0.3",
     "parcel": "^2.8.1",
     "parcel-namer-custom": "^0.2.0",
     "postcss": "^8.4.20",
