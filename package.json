@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "npm-run-all rimraf:dev fetch --parallel dev:parcel serve:dev",
     "dev:parcel": "parcel watch --no-cache --public-url / --dist-dir dev src/**/*.html",
-    "build": "npm-run-all rimraf:build fetch build:parcel",
+    "build": "npm-run-all rimraf:build fetch build:parcel fix-build",
     "build:parcel": "parcel build --no-cache --no-source-maps --dist-dir build src/**/*.html",
     "rimraf:dev": "rimraf dev/",
     "rimraf:build": "rimraf build/",
