@@ -31,7 +31,7 @@
     "@cimonitor/parcel-transformer-package-version": "^0.1.0",
     "@futureportal/parcel-transformer-package-version": "^1.0.0",
     "@parcel/optimizer-data-url": "^2.8.1",
-    "@parcel/transformer-inline-string": "^2.8.1",
+    "@parcel/transformer-inline-string": "^2.8.2",
     "@parcel/transformer-sass": "^2.8.1",
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
     "axios": "^1.2.1",
