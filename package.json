@@ -32,7 +32,7 @@
     "@futureportal/parcel-transformer-package-version": "^1.0.0",
     "@parcel/optimizer-data-url": "^2.8.1",
     "@parcel/transformer-inline-string": "^2.8.1",
-    "@parcel/transformer-sass": "^2.8.1",
+    "@parcel/transformer-sass": "^2.8.2",
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
     "axios": "^1.2.1",
     "jsdom": "^20.0.3",
