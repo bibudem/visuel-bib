@@ -36,7 +36,7 @@
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
     "axios": "^1.2.1",
     "jsdom": "^20.0.3",
-    "parcel": "^2.8.1",
+    "parcel": "^2.8.3",
     "parcel-namer-custom": "^0.2.0",
     "postcss": "^8.4.20",
     "postcss-import": "^15.1.0",
