@@ -34,7 +34,7 @@
     "@parcel/transformer-inline-string": "^2.8.1",
     "@parcel/transformer-sass": "^2.8.1",
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
-    "axios": "^1.2.1",
+    "axios": "^1.2.6",
     "jsdom": "^20.0.3",
     "parcel": "^2.8.1",
     "parcel-namer-custom": "^0.2.0",
