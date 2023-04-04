@@ -1,5 +1,8 @@
 {
   "html.format.enable": true,
   "html.format.indentHandlebars": false,
-  "html.format.unformatted": "script"
+  "html.format.unformatted": "script",
+  "conventionalCommits.scopes": [
+    "deps"
+  ]
 }
