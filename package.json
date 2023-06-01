@@ -30,7 +30,7 @@
   "devDependencies": {
     "@cimonitor/parcel-transformer-package-version": "^0.1.0",
     "@futureportal/parcel-transformer-package-version": "^1.0.0",
-    "@parcel/optimizer-data-url": "^2.8.3",
+    "@parcel/optimizer-data-url": "^2.9.1",
     "@parcel/transformer-inline-string": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
