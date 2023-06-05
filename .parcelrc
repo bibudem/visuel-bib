@@ -4,7 +4,7 @@
   ],
   "transformers": {
     "*.js": [
-      "@cimonitor/parcel-transformer-package-version",
+      "@futureportal/parcel-transformer-package-version",
       "..."
     ],
     "*.{hbs,html,txt}": [
