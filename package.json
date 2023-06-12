@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@futureportal/parcel-transformer-package-version": "^1.0.0",
-    "@parcel/optimizer-data-url": "^2.9.1",
+    "@parcel/optimizer-data-url": "^2.9.2",
     "@parcel/transformer-inline-string": "^2.9.1",
     "@parcel/transformer-sass": "^2.9.1",
     "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
