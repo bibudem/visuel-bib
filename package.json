@@ -23,7 +23,7 @@
     "fix-build": "node lib/fix-file-hash.js"
   },
   "dependencies": {
-    "handlebars": "^4.7.7",
+    "handlebars": "^4.7.8",
     "jquery": "^3.7.0",
     "npm-run-all": "^4.1.5"
   },
